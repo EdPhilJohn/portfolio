@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {Nav,Navbar} from 'react-bootstrap'
+import 'bootswatch/dist/lux/bootstrap.min.css';
 const Header = () => {
     return (
         <div>
