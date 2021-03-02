@@ -1,6 +1,7 @@
 
 import 'bootswatch/dist/lux/bootstrap.min.css';
 import profileStyles from '../../styles/common.module.css'
+import Head from 'next/head'
 export default function IPInfo({ data }) {
     let proxyOutput = "You are using "
     data.proxy.proxy ? proxyOutput = proxyOutput + 'Proxy' : proxyOutput = proxyOutput + ' no Proxy'
@@ -10,6 +11,10 @@ export default function IPInfo({ data }) {
     let locSrc = "Latitude " + data.location.lat  + ",Longitude " + data.location.lng
     
     return (<div className={profileStyles.drop}>
+            <Head>
+        <title>IP Info </title>
+              <link rel="icon" href="https://th.bing.com/th/id/OIP.1YZC-Gy4hj95QL036kXOAQHaFx?pid=ImgDet&rs=1" />
+          </Head>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/projects/ipinfo">IP Information</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
