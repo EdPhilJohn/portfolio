@@ -19,6 +19,10 @@ export default function RecipeApi({ data }) {
     
     
     return (<div>
+            <Head>
+        <title>Recipe </title>
+              <link rel="icon" href="https://th.bing.com/th/id/OIP.1YZC-Gy4hj95QL036kXOAQHaFx?pid=ImgDet&rs=1" />
+          </Head>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="/recipeapi">Random Recipe Application</a>
             <div class="collapse navbar-collapse" id="navbarColor02">
