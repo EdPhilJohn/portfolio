@@ -24,7 +24,7 @@ export default function RecipeApi({ data }) {
               <link rel="icon" href="https://th.bing.com/th/id/OIP.1YZC-Gy4hj95QL036kXOAQHaFx?pid=ImgDet&rs=1" />
           </Head>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="/recipeapi">Random Recipe Application</a>
+            <h3>Random Recipe Application</h3>
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -50,7 +50,7 @@ export default function RecipeApi({ data }) {
                 <div dangerouslySetInnerHTML={{ __html: data.recipes[0].summary }}></div>
             </div>
             <div class="card-footer">
-                <button type="button" onClick={() => window.location.reload()} class="btn btn-primary">Don't feel like making {data.recipes[0].title}? No Worries, click here for another</button>
+                <button type="button" onClick={() => window.location.reload()} class="btn btn-primary">Don't feel like making {data.recipes[0].title}? No Worries, click here for another or reload the page</button>
   </div>
         </div>
         <div class="card">
